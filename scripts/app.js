@@ -12,7 +12,7 @@ const colors = {
 
 let totalExpData, totalBudgetLeftData;
 
-// ---------------------------------refrense of html element here---------------------------
+// ---------------------------------reference of html element here---------------------------
 const ctx = document.getElementById("myChart");
 const budgetLeftEle = document.getElementById("budgetLeft");
 const totalBudgetEle = document.getElementById("totalBudget");
@@ -116,7 +116,8 @@ function createTranHTML(obj = {}) {
   </div>`;
 }
 
-localStorage.saveTag("Manik👨‍💻");
+// Seed with a generic starter tag so the list isn't empty on first load.
+localStorage.saveTag("General");
 
 function createTagHTML(str) {
   return `
